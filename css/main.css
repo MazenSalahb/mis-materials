@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --darkest: #352f44;
+  --darkhover: #292535;
+  --darker: #5c5470;
+  --grey: #b9b4c7;
+  --light: #faf0e6;
+  --radius: 3px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--darkest);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  padding: 10px 20px;
+  background-color: var(--darker);
+  margin-bottom: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+header a {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--light);
+}
+
+header ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+header ul li {
+  background-color: var(--darkest);
+  color: var(--light);
+  padding: 6px;
+  border-radius: var(--radius);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+header ul li:hover {
+  background-color: var(--darkhover);
+}
+
+.sec {
+  display: flex;
+  gap: 10px;
+  width: 60%;
+  background-color: var(--darker);
+  padding: 16px;
+  border-radius: var(--radius);
+  margin: 0px auto;
+  color: var(--light);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+}
+.sec img {
+  width: 30%;
+  border-radius: var(--radius);
+}
+
+.sec .sec-text {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-top: 20px;
+}
+
+.sec .sec-text p {
+  line-height: 26px;
+  color: var(--grey);
+}
+
+/* text selectino color */
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--grey);
+  background: var(--darkest);
+}
+
+::selection {
+  color: var(--grey);
+  background: var(--darkest);
+}

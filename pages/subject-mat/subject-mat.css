@@ -1,0 +1,42 @@
+:root {
+  --darkest: #352f44;
+  --darkhover: #292535;
+  --darker: #5c5470;
+  --grey: #b9b4c7;
+  --light: #faf0e6;
+  --radius: 3px;
+}
+
+* {
+  direction: rtl;
+}
+
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+h1 {
+  color: var(--light);
+  padding: 1rem;
+}
+
+.material {
+  background-color: var(--darker);
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  height: 26rem;
+  color: var(--light);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.material img {
+  width: 100%;
+}

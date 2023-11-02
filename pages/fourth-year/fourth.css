@@ -1,0 +1,33 @@
+:root {
+  --darkest: #352f44;
+  --darkhover: #292535;
+  --darker: #5c5470;
+  --grey: #b9b4c7;
+  --light: #faf0e6;
+  --radius: 3px;
+}
+
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.material {
+  background-color: var(--darker);
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  height: 30rem;
+  color: var(--light);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.material img {
+  width: 100%;
+}
