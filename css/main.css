@@ -74,6 +74,12 @@ header ul li:hover {
   border-radius: var(--radius);
 }
 
+@media only screen and (max-width: 480px) {
+  .sec img {
+    display: none;
+  }
+}
+
 .sec .sec-text {
   display: flex;
   flex-direction: column;
