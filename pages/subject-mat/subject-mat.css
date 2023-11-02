@@ -30,7 +30,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   width: 15rem;
-  height: 26rem;
+  min-height: 26rem;
   color: var(--light);
   border-radius: var(--radius);
   overflow: hidden;
@@ -39,4 +39,9 @@ h1 {
 
 .material img {
   width: 100%;
+}
+
+hr {
+  margin: 1rem 1rem;
+  border: solid 1px var(--grey);
 }
